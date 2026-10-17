@@ -54,19 +54,3 @@ La manette fonctionne en **USB** et en **Bluetooth**. Le Bluetooth est moins tes
 
 Le programme lit les rapports HID de la manette avec `hidapi` : position des doigts, boutons et gâchettes. Il envoie ensuite des événements souris (position absolue) et clavier (codes de touche matériels) à Windows avec `SendInput`.
 
-## Mettre le projet sur GitHub
-
-```bash
-git init
-git add dualsense_osu.py requirements.txt creer_exe.bat README.md .gitignore
-git commit -m "Première version"
-git branch -M main
-git remote add origin https://github.com/TON-PSEUDO/dualsense-osu.git
-git push -u origin main
-```
-
-Crée d'abord un dépôt vide sur github.com (bouton **New**), sans README, puis remplace `TON-PSEUDO` dans la commande. Ne publie pas les dossiers `build/`, `dist/` ni le fichier `.spec` : ils sont dans le `.gitignore`. Pour partager le `.exe`, ajoute-le plutôt dans l'onglet **Releases** du dépôt.
-
-## Licence
-
-À toi de choisir (MIT est un bon choix par défaut).
